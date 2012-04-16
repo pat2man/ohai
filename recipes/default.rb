@@ -38,5 +38,3 @@ ohai_run_action = (rd.updated? || !(::IO.read(Chef::Config[:config_file]) =~ /Oh
 ohai 'custom_plugins' do
   action :nothing
 end.run_action(ohai_run_action)
-
-end
